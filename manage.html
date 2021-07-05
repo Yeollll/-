@@ -21,8 +21,8 @@
             <td width="25px">ID</td>
             <td width="40px">姓名</td>
             <td width="40px">成绩</td>
-            <td width="60px">性别</td>
-            <td width="80px">QQ号</td>
+            <td width="60px">QQ</td>
+            <td width="80px">性别</td>
             <td width="100px">编辑</td>
         </tr>
         {% for list in lists %}
@@ -60,12 +60,12 @@
                                 <p>ID：<input type="text" name="id" value="{{ list[0] }}"></p>
                                 <p>姓名：<input type="text" name="name" value="{{ list[1] }}"></p>
                                 <p>成绩：<input type="text" name="score" value="{{ list[2] }}"></p>
-                                <p>性别：<select value="{{ list[3] }}">
+                                <p>QQ：<input type="text" name="QQ" value="{{ list[3] }}"></p>
+                                <p>性别：<select value="{{ list[4] }}" name="sex">
 
                                     <option value="Male" >Male</option>
                                     <option value="Female" >Female</option>
                                 </select></p>
-                                <p>QQ号：<input type="text" name="QQ" value="{{ list[4] }}"></p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -102,12 +102,12 @@
                     <p>ID：<input type="text" name="id"></p>
                     <p>姓名：<input type="text" name="name"></p>
                     <p>成绩：<input type="text" name="score"></p>
-                    <p>性别：<select >
+                    <p>QQ：<input type="text" name="QQ"></p>
+                    <p>性别：<select name="sex">
 
-                                    <option value="Male" >Male</option>
+                                     <option value="Male" >Male</option>
                                     <option value="Female" >Female</option>
                                 </select></p>
-                    <p>QQ号：<input type="text" name="QQ"></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭
